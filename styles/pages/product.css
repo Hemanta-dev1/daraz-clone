@@ -1,5 +1,5 @@
 .main{
-  margin-top: 60px;
+  margin-top: px;
 }
 .product-grid {
   display: grid;
@@ -49,13 +49,14 @@
 
 .product-container{
   width: 200px;
-  display: flex;
+padding-top: 40px; 
+padding-bottom: 25px;
+ padding-left: 25px; 
+ padding-right: 25px; 
+ border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231); 
+  display: flex; 
   flex-direction: column;
-  padding-top: 40px; 
-  padding-bottom: 25px;
-   padding-left: 25px;
-    padding-right: 25px;
-    border-right: 1px solid rgb(231, 231, 231); border-bottom: 1px solid rgb(231, 231, 231);
 }
 .product-image-container{
   display: flex;
@@ -114,9 +115,7 @@
 
 
 .add-to-cart-button{
-  background-color: #FFD814;
-  border-style: none;
   width: 100%;
   border-radius: 50px;
- padding: 8px;
+  padding: 8px;
 }
