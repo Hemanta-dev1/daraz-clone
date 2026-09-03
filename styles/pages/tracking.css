@@ -1,0 +1,70 @@
+.main-tracking{
+  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto,Arial;
+  max-width: 850px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.tracking-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.title-tracking{
+  margin-bottom: 27px;
+  font-size: 16px;
+}
+.arrival{
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.tracking-image-container{
+  margin-top: 20px;
+  max-width: 150px;
+  max-height: 150px;
+}
+.tracking-image{
+  width: 100%;
+}
+.progress-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.preparing{
+  color: green;
+}
+.progress-bar-container{
+    height: 25px;
+  width: 100%;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50px;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background-color: green;
+  border-radius: 50px;
+  width: 10%;
+}
+.preparing,.shipping,.delivered{
+  margin-bottom: 15px;
+}
+@media (max-width: 575px) {
+  .progress-heading{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-heading {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+}
