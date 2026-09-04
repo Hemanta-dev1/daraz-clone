@@ -38,7 +38,7 @@
   font-size: 20px;
 }
 .preparing{
-  color: green;
+  color: #ff7f36;
 }
 .progress-bar-container{
     height: 25px;
@@ -49,7 +49,7 @@
 }
 .progress-bar {
   height: 100%;
-  background-color: green;
+  background-color: #ff7f36;
   border-radius: 50px;
   width: 10%;
 }
