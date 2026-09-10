@@ -1,19 +1,9 @@
-const products = [{
-  image:'./images/6-piece-white-dinner-plate-set.jpg',
-  name: '6 Piece White Dinner Plate Set',
-  rating: {
-      stars:4.5,
-      count:87
-  },
-  priceCents:'$1090',
-}];
 
 let productsHTML = '';
 
 products.forEach( (product) => {
  
    productsHTML += `
-
   <div class="product-container">
               <div class="product-image-container">
                 <img class="product-image" 
@@ -23,11 +13,11 @@ products.forEach( (product) => {
               ${product.name}
               </div>
               <div class="rating-image-container">
-                <img class="rating-image" src="./images/rating-${product.rating.stars *10}.png" />
+                <img class="rating-image" src="images/ratings/rating-${product.rating.stars *10}.png" />
                 <div class="product-rating-count link-primary">${product.rating.count}</div>
               </div>
               <div class="product-price">
-                   ${product.price / 100}
+                   $${(product.priceCents / 100).toFixed(2)}
               </div>
               <div class="product-quantity-container">
                 <select>
@@ -49,5 +39,6 @@ products.forEach( (product) => {
 
 console.log(productsHTML)
 
-document.querySelector(".js-products-grid")
+document.querySelector('.js-products-grid').
+innerHTML = productsHTML;
 
